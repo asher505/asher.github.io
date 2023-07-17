@@ -1,0 +1,75 @@
+body {
+    background: violet;
+}
+
+.nav {
+    display: flex;
+    margin-top: 10px;
+    flex:1;
+    border: 10px double darkslateblue;
+    border-radius: 5px;
+    background-color: bisque;
+    justify-content: space-evenly;
+}
+
+.page {
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid red
+}
+
+nav ul li {
+    display: inline;
+}
+
+#page1 {
+    background: red
+}
+
+#page2 {
+    background: green
+}
+
+#page3 {
+    background: blue
+}
+
+/*for responsive menu*/
+#hamIcon {
+    display: none;
+}
+
+
+
+.menuShow{
+    display:block;
+}
+
+#ball {
+    background: cyan;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:800px) {
+    nav ul li {
+        display: block;
+    }
+
+    /*make a menu items vertical*/
+    #hamIcon {
+        display: block;
+    }
+
+    /* unhide menu icon */
+    nav ul {
+        display: none;
+    }
+
+    /*hide the menu item list*/
+}
