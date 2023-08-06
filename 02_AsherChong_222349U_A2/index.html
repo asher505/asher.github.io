@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!--this is to link css-->
+    <title>AA | Asher's Aquatics</title>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation tab -->
+        <div class="banner">
+            <div class="titlehead">
+                <h1>Aquascaping.</h1>
+            </div>
+            <div class="buttons">
+                <nav> <!--menu system-->
+                    <button id="hamIcon">Menu</button>
+                    <ul>
+                        <li><button id="page1btn" class="h3Button">About.</button></li>
+                        <li><button id="page2btn" class="h3Button">Plants.</button></li>
+                        <li><button id="page3btn" class="h3Button">Maintenance.</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="pagecontainer">
+        <!--page1-->
+        <div class="page" id="page1">
+            <div class="bgimg1">
+              <img src="image/surface.jpg" alt="Water surface">
+            </div>
+            <div class="overlay">
+              <div class="floatingTextContainer">
+                  <h1>The Beauty,</h1>
+              </div>
+            </div>
+            <div class="textContainer">
+              <!-- the button will scroll to here -->
+              <div id="targetElement"></div>
+              <button id="scrollButton" class="h1Button">Underneath.</button>
+              
+            </div>
+            
+            <div class="bgimg2">
+              <img src="image/under.jpg" alt="Under the surface">
+            </div>
+            <div class="textContainer">
+              <div id="targetElement2"></div>
+              <button id="scrollButton2" class="h1Button">Brought straight into your home.</button>
+              
+            </div>
+          
+            <div class="bgimg3">
+              <img src="image/scape1.jpg" alt="Aquascape">
+            </div>
+            <div class="aboutContainer" id="about">
+              <h1>Aquascaping: The Art of Underwater Landscapes</h1><br>
+              <h3>Aquascaping is the art of creating captivating underwater landscapes in aquariums. 
+                It involves arranging aquatic plants, rocks, and driftwood to mimic stunning natural scenes 
+                like forests, streams, or ocean reefs. This meticulous craft combines creativity and nature, 
+                providing a therapeutic escape.
+                Discover the mesmerizing world of aquascaping and create your own underwater masterpiece.</h3>
+            </div>
+          </div>
+              
+        <!--page2-->
+        <div class="page" id="page2">
+          <div class="plantContainer">
+              <img src="image/montecarlo.jpeg" alt="Monte Carlo plant">
+              <div class="detailsContainer">
+                  <div class="nameContainer">
+                      <h3>Monte Carlo.</h3>
+                      <p>Carpeting plant</p>
+                  </div>
+                  <div class="learnmoreContainer">
+                    <button id="learnmore" onclick="showPopUp('montecarlo')">More</button>
+                  </div>
+              </div>
+          </div>
+          <div class="plantContainer">
+              <img src="image/rotala.jpg" alt="Rotala plant">
+              <div class="detailsContainer">
+                  <div class="nameContainer">
+                      <h3>Rotala</h3>
+                      <p>Stem plant</p>
+                  </div>
+                  <div class="learnmoreContainer">
+                    <button id="learnmore1" onclick="showPopUp('rotala')">More</button>
+                  </div>
+              </div>
+          </div>
+          <div class="plantContainer">
+              <img src="image/hydro.jpg" alt="Hydrocotyle Tripartita">
+              <div class="detailsContainer">
+                  <div class="nameContainer">
+                      <h3>Hydrocotyle</h3>
+                      <p>Foreground plant</p>
+                  </div>
+                  <div class="learnmoreContainer">
+                    <button id="learnmore2" onclick="showPopUp('hydro')">More</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--page3-->
+        <div class="page" id="page3">
+            <div class="tankImage">
+              <img src="image/scape2.jpg" alt="image of an aquarium">
+          </div>
+          <div class="button-container">
+            <button class="algae topLeft" onclick="showPopUp('text1')">
+              <img src="image/algae.png" alt="algae">
+            </button>
+            <button class="algae bottomRight" onclick="showPopUp('text2')">
+                <img src="image/algae.png" alt="algae">
+            </button>
+            <button class="algae bottomLeft" onclick="showPopUp('text3')">
+                <img src="image/algae.png" alt="algae">
+            </button>
+          </div>
+        </div>
+        <div class="popup" id="popup">
+          <div class="popup-content" id="popupContent">
+            <button class="close-button" onclick="closePopUp()">Close</button>
+          </div>
+        </div>
+</body>
+
+</html>
