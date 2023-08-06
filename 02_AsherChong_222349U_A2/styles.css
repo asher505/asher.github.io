@@ -1,0 +1,351 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  padding:0px;
+  margin:0px;
+}
+
+.h1Button {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.h3Button {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.2);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.8);
+  transition: 0.25s;
+}
+
+#learnmore {
+  background-color: black;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+}
+
+#learnmore1 {
+  background-color: black;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+}
+
+#learnmore2 {
+  background-color: black;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  min-width: 20%;
+  text-decoration: none;
+  text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+    background-color: 	#f6f6f6;
+  }
+  
+.page img {
+  max-width: 100%;
+  height: auto;
+}
+
+.textContainer{
+  width: 100%;
+  padding: 20px;
+}
+
+.aboutContainer {
+  width: 100%;
+  padding: 20px;
+  padding-right: 30%;
+  text-align: left;
+}
+
+.floatingTextContainer{
+  width: 100%;
+  padding: 20px;
+  color: white;
+}
+
+.bgimg1,
+.bgimg2,
+.bgimg3,
+.bgimg4 {
+  height: auto;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+  
+
+.banner {
+    display: flex;
+    width: 100%;
+}
+
+.titlehead {
+    display: flex;
+    flex: 2;
+    margin: 20px;
+}
+
+.buttons {
+    display:flex;
+    flex: 1;
+    margin: 20px;
+}
+
+
+
+nav ul li {
+    display: inline;
+}
+
+/*for responsive menu*/
+#hamIcon {
+    display: none;
+}
+
+
+
+.menuShow{
+    display:block;
+}
+
+.tankImage {
+  position: relative;
+}
+
+.algae {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.algae img {
+  width: 60%;
+  height: 60%;
+}
+
+.topLeft {
+  top: 20%;
+  left: 20%;
+}
+
+.bottomRight {
+  bottom: 10%;
+  right: 10%;
+}
+
+.bottomLeft {
+  bottom: 10%;
+  left: 10%;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  pointer-events: none; /* so that it doesnt change when it isnt visible */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popup.active {
+  display: flex; /* Show the popup when the "active" class is added */
+  opacity: 1;
+  pointer-events: auto; /* when visible, it can change */
+}
+
+.popup-content {
+  background-color: white;
+  width: 50%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding-top: 40px;
+  padding-right: 40px;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.plantContainer {
+  padding: 10px;
+  width: 25%;
+  box-shadow: 1px 1px 10px 0px #000000;
+  margin: 20px;
+  min-width: 200px;
+}
+
+.detailsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nameContainer {
+  flex: 40%;
+}
+
+.learnmoreContainer {
+  flex:auto;
+}
+
+
+.modal {
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000055;
+}
+
+.modalcard {
+  width: 50%;
+  height: 50%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.modalheader {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modalheader button {
+  margin: 15px;
+  padding: 10px;
+  background-color: transparent;
+  border: 0;
+  width: 50px;
+}
+
+.hidemodal {
+  display: none;
+}
+
+.modalbody {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modalimg {
+  height: 80%;
+  width: 30%;
+}
+
+.modaldesc {
+  font-size: 2em;
+}
+
+@media screen and (max-width:800px) {
+    nav ul li {
+        display: block;
+    }
+
+    /*make a menu items vertical*/
+    #hamIcon {
+        display: block;
+    }
+
+    /* unhide menu icon */
+    nav ul {
+        display: none;
+    }
+    /*hide the menu item list*/
+
+    .overlay {
+      top: 30%;
+    }
+
+    .topLeft {
+      top: 30%;
+      left: 20%;
+    }
+
+    .bottomRight {
+      bottom: 45%;
+      right: 60%;
+    }
+    
+    .bottomLeft {
+      bottom: 45%;
+      left: 60%;
+    }
+}
+    
