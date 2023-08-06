@@ -12,11 +12,13 @@ h1 {
 .h1Button {
   font-size: 24px;
   font-weight: bold;
+  color: #000000;
 }
 
 .h3Button {
   font-size: 20px;
   font-weight: bold;
+  color: #000000;
 }
 
 button:hover {
@@ -257,60 +259,6 @@ nav ul li {
 
 .learnmoreContainer {
   flex:auto;
-}
-
-
-.modal {
-  top: 0;
-  left: 0;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-  width: 100vw;
-  height: 100vh;
-  background-color: #00000055;
-}
-
-.modalcard {
-  width: 50%;
-  height: 50%;
-  background-color: #fff;
-  border-radius: 20px;
-}
-
-.modalheader {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.modalheader button {
-  margin: 15px;
-  padding: 10px;
-  background-color: transparent;
-  border: 0;
-  width: 50px;
-}
-
-.hidemodal {
-  display: none;
-}
-
-.modalbody {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#modalimg {
-  height: 80%;
-  width: 30%;
-}
-
-.modaldesc {
-  font-size: 2em;
 }
 
 @media screen and (max-width:800px) {
