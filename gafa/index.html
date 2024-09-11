@@ -9,25 +9,6 @@
     <script src="js/lib/aframe-ar.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script src="js/app.js"></script>
-    <script>
-            if (window.DeviceOrientationEvent){
-                window.addEventListener(
-                    "deviceorientation",
-                    (event) => {
-                        if (typeof unityInstance !== 'undefined'){
-                            if (event.beta !== null && event.gamma !== null && event.alpha !== null){
-                            unityInstance.SendMessage('GyroscopeManager','SetX', event.beta);
-                            unityInstance.SendMessage('GyroscopeManager','SetY', event.gamma);
-                            unityInstance.SendMessage('GyroscopeManager','SetZ', event.alpha);
-                            }
-                        } else {
-                            console.error("unityInstance is not defined");
-                        }
-                    },
-                    true,
-                );
-            }
-    </script>
 
   </head>
 
