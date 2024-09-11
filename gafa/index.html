@@ -22,7 +22,9 @@
                 //}
                 //    x += 90;
                 //    y += 90;
-                unityInstance.SendMessage('GyroscopeManager','SetOrientation', x,y,z);
+                unityInstance.SendMessage('GyroscopeManager','SetX', x);
+                unityInstance.SendMessage('GyroscopeManager','SetY', y);
+                unityInstance.SendMessage('GyroscopeManager','SetZ', z);
             }
 
             
