@@ -10,17 +10,21 @@
     <script src="Build/UnityLoader.js"></script>
     <script src="js/app.js"></script>
     <script>
-            //if (window.DeviceOrientationEvent){
-                //window.addEventListener(
-                    //"deviceorientation",
-                    //(event) => {
-                        //unityInstance.SendMessage('GyroscopeManager','SetX', event.beta);
-                        //unityInstance.SendMessage('GyroscopeManager','SetY', event.gamma);
-                        //unityInstance.SendMessage('GyroscopeManager','SetZ', event.alpha);
-                   // },
-                   // true,
-                //);
-            //}
+            if (window.DeviceOrientationEvent){
+                window.addEventListener(
+                    "deviceorientation",
+                    (event) => {
+                        if (typeof unityInstance !== 'undefined'){
+                            unityInstance.SendMessage('GyroscopeManager','SetX', event.beta);
+                            unityInstance.SendMessage('GyroscopeManager','SetY', event.gamma);
+                            unityInstance.SendMessage('GyroscopeManager','SetZ', event.alpha);
+                        } else {
+                            console.error("unityInstance is not defined");
+                        }
+                    },
+                    true,
+                );
+            }
 
             //function handleOrientation(event) {
                 //let x = event.beta;
