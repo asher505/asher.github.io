@@ -18,7 +18,7 @@
                             if (event.beta !== null && event.gamma !== null && event.alpha !== null){
                             unityInstance.SendMessage('GyroscopeManager','SetX', event.beta);
                             unityInstance.SendMessage('GyroscopeManager','SetY', event.gamma);
-                            unityInstance.SendMessage('GyroscopeManager','SetZ', event.alpha);
+                            unityInstance.SendMessage('GyroscopeManager','SetZ', 0);
                             }
                         } else {
                             console.error("unityInstance is not defined");
