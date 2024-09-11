@@ -16,20 +16,9 @@
                     (event) => {
                         if (typeof unityInstance !== 'undefined'){
                             if (event.beta !== null && event.gamma !== null && event.alpha !== null){
-                                let x = event.beta;
-                                let y = event.gamma;
-                                let z = event.alpha;
-                                if (x > 90) {
-                                    x = 90;
-                                }
-                                if (x < -90) {
-                                    x = -90;
-                                }
-                                    x += 90;
-                                    y += 90;
-                                unityInstance.SendMessage('GyroscopeManager','SetX', x);
-                                unityInstance.SendMessage('GyroscopeManager','SetY', y);
-                                unityInstance.SendMessage('GyroscopeManager','SetZ', z);
+                            unityInstance.SendMessage('GyroscopeManager','SetX', event.beta);
+                            unityInstance.SendMessage('GyroscopeManager','SetY', event.gamma);
+                            unityInstance.SendMessage('GyroscopeManager','SetZ', event.alpha);
                             }
                         } else {
                             console.error("unityInstance is not defined");
